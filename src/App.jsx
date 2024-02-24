@@ -8,6 +8,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import FuelQuoteHistory from './FuelQuoteHistory';
+import LoginForm from './LoginForm';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       <Router>
         <Routes>
           <Route path='/fuelquotehistory' element={<FuelQuoteHistory/>}></Route>
-          {/* Add your routes here */}
+          <Route path='/LoginForm' element={<LoginForm/>}></Route>
         </Routes>
       </Router>
     </div>
