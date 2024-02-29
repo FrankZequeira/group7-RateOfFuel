@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import FuelQuoteHistory from './FuelQuoteHistory';
 import LoginForm from './LoginForm';
+import ProfileManagement from './ProfileManagement';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path='/fuelquotehistory' element={<FuelQuoteHistory/>}></Route>
           <Route path='/LoginForm' element={<LoginForm/>}></Route>
+          <Route path='/profilemanagement' element={<ProfileManagement/>}></Route>
         </Routes>
       </Router>
     </div>
