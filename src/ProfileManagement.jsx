@@ -18,11 +18,11 @@ export default function ProfileManagement() {
     <main>
         <form className = "formBox">
             <div className="form">
-                <label for="name">Full Name:</label>
+                <label for="name">Full Name:<span style={{color: "red"}}>*</span></label>
                 <input type="text" name="name" id="name" pattern="^([a-zA-Z]{1,50})$" required/>
             </div>
             <div className="form">
-                <label for="address1">Address 1:</label>
+                <label for="address1">Address 1:<span style={{color: "red"}}>*</span></label>
                 <input type="text" name="address1" id="address1" maxlength="100" required/>
             </div>
             <div className="form">
@@ -30,10 +30,10 @@ export default function ProfileManagement() {
                 <input type="text" name="address2" id="address2" maxlength="100"/>
             </div>
             <div className="form">
-                <label for="city">City:</label>
+                <label for="city">City:<span style={{color: "red"}}>*</span></label>
                 <input type="text" name="city" id="city" maxlength="100" required/>
 
-                <label for="state">State:</label>
+                <label for="state">State:<span style={{color: "red"}}>*</span></label>
                 <select name="state" id="state" required>
                     <option selected="selected"></option>
                     <option value="AL">AL</option>
@@ -42,7 +42,7 @@ export default function ProfileManagement() {
                 </select>
             </div>
             <div className="form">
-                <label for="zipcode">Zipcode:</label>
+                <label for="zipcode">Zipcode:<span style={{color: "red"}}>*</span></label>
                 <input type="text" name="zipcode" id="zipcode" pattern="[0-9]{5,9}" required/>
             </div>
             <div className="form">
@@ -54,7 +54,7 @@ export default function ProfileManagement() {
     </main>
 
     <footer>
-        <p>&copy; FuelsRUs. All rights reserved.</p>
+        <p>&copy; PumpPricePro. All rights reserved.</p>
     </footer>
 </body>
     )
